@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Table</title>
+    <script>
+        function confirmBooking(event) {
+            event.preventDefault(); 
+            alert("Reservation Successful!\nThank you for booking a table with Tasty Bites.");
+        }
+    </script>
+</head>
+<body>
+    <h1>Table Booking</h1>
+    <form onsubmit="confirmBooking(event)">
+        Name: <input type="text" name="name"><br><br>
+        Contact: <input type="text" name="contact"><br><br>
+        Date: <input type="date" name="date"><br><br>
+        Time: <input type="time" name="time"><br><br>
+        <input type="submit" value="Book Now">
+    </form>
+    <br>
+    <a href="index.html">Go Back</a>
+</body>
+</html>
+
